@@ -90,7 +90,7 @@ Source code is not publicly available.
 
 If Harbor is useful to you, you can support the project via WeChat:
 
-![WeChat sponsor QR code](docs/sponsor-qr.png)
+<img src="docs/sponsor-qr.png" alt="WeChat sponsor QR code" width="220" />
 
 ---
 
