@@ -49,15 +49,17 @@ Harbor is built for everyday desktop use: browse your libraries, continue where 
 
 | Platform | Notes |
 |----------|--------|
-| macOS (Apple Silicon / Intel) | Overlay title bar; native playback bundled with the app |
-| Windows (x64) | Frameless window; native playback bundled with the app |
+| macOS 26+ (Apple Silicon only) | Overlay title bar; native playback bundled with the app |
+| Windows 10+ (x64) | Frameless window; native playback bundled with the app |
+
+Current installers support **Windows 10** (x64) and **macOS 26** or later (**Apple Silicon only**).
 
 ---
 
 ## Requirements
 
 - An Emby server you can reach over the network
-- macOS or Windows as listed above
+- Windows 10+ (x64), or macOS 26+ (Apple Silicon only)
 
 ---
 
