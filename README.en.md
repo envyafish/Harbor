@@ -86,6 +86,14 @@ Source code is not publicly available.
 
 ---
 
+## Sponsor
+
+If Harbor is useful to you, you can support the project via WeChat:
+
+![WeChat sponsor QR code](docs/sponsor-qr.png)
+
+---
+
 ## License
 
 Proprietary. All rights reserved.
