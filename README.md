@@ -1,147 +1,99 @@
-# Harbor
+# Harbor（港湾）
 
-**English** | [中文](README.zh-CN.md)
+**中文** | [English](README.en.md)
 
-A native desktop client for [Emby](https://emby.media/), built with **Tauri 2**, **React**, and **Rust**.
+面向 [Emby](https://emby.media/) 的原生桌面客户端。
 
-Harbor focuses on a calm, desktop-first experience: browse your libraries, pick up where you left off, and play with embedded **libmpv** — plus optional danmaku from danmu_api–compatible sources.
-
-> **Status:** early preview (`0.1.0`). APIs and UI may change.
+Harbor 面向日常桌面使用：浏览媒体库、继续观看，并通过内嵌 **libmpv** 播放。可选接入你自行配置的、兼容 danmu_api 协议的弹幕源。
 
 ---
 
-## Screenshots
+## 截图
 
-> Drop image files into [`docs/screenshots/`](docs/screenshots/). Suggested names are listed below.
+### 首页
 
-### Home
+![首页](docs/screenshots/home.png)
 
-![Home](docs/screenshots/home.png)
+### 媒体库
 
-### Library
+![媒体库](docs/screenshots/library.png)
 
-![Library](docs/screenshots/library.png)
+### 详情
 
-### Detail
+![详情](docs/screenshots/detail.png)
 
-![Detail](docs/screenshots/detail.png)
+### 播放器
 
-### Player
+![播放器](docs/screenshots/player.png)
 
-![Player](docs/screenshots/player.png)
+### 设置
 
-### Settings
-
-![Settings](docs/screenshots/settings.png)
+![设置](docs/screenshots/settings.png)
 
 ---
 
-## Features
+## 功能
 
-- **Libraries** — browse views, folders, series, movies, and box sets
-- **Continue watching & Next Up** — resume playback; hide items from resume when needed
-- **Native playback** — embedded libmpv (macOS / Windows)
-- **Subtitles** — server tracks plus local external subtitle files
-- **Danmaku (optional)** — multi-server danmu_api–compatible sources, heatmap seek, player source picker
-- **Desktop chrome** — macOS overlay title bar; Windows frameless custom title bar
-- **Themes** — light / dark / system, multiple accents and backgrounds
-- **Secure session** — Emby token stored in the OS keyring via Rust
-
----
-
-## Platforms
-
-| Platform | Notes |
-|----------|--------|
-| macOS (Apple Silicon / Intel) | Overlay title bar; libmpv via bundled / local libs |
-| Windows (x64) | Frameless window; ship `libmpv-2.dll` with the app |
+- **媒体库** — 浏览视图、文件夹、剧集、电影、合集
+- **继续观看 / Next Up** — 断点续播；可从继续观看中移除
+- **原生播放** — macOS / Windows 内嵌 libmpv
+- **字幕** — 服务器字幕轨与本地外挂字幕
+- **弹幕（可选）** — 多弹幕源、热力条跳转、播放器内选源
+- **桌面体验** — macOS Overlay 标题栏；Windows 无边框自定义标题栏
+- **主题** — 浅色 / 深色 / 跟随系统，多种强调色与背景
+- **安全会话** — Emby 账号与令牌保存在系统钥匙串
 
 ---
 
-## Requirements
+## 支持平台
 
-- An Emby server you can reach over the network
-- **Runtime:** download a release build (when published), or build from source
-- **From source:** Node.js 20+, Rust stable, and libmpv — see [docs/MPV_SETUP.md](docs/MPV_SETUP.md) after the full source tree is present
-
----
-
-## Getting started
-
-### Use a release
-
-1. Download the latest `.dmg` (macOS) or installer / zip (Windows) from [Releases](https://github.com/envyafish/Harbor/releases).
-2. Open Harbor and sign in with your Emby server URL, username, and password.
-
-### Build from source
-
-```bash
-npm install
-npm run tauri:dev:mpv    # recommended: enable native playback
-# or
-npm run tauri dev        # UI only / without mpv feature
-```
-
-Production build:
-
-```bash
-npm run build
-npm run tauri build -- --features mpv
-```
-
-Danmaku setup (optional): [docs/DANMAKU_SETUP.md](docs/DANMAKU_SETUP.md).
+| 平台 | 说明 |
+|------|------|
+| macOS（Apple Silicon / Intel） | Overlay 标题栏；原生播放随应用分发 |
+| Windows（x64） | 无边框窗口；原生播放随应用分发 |
 
 ---
 
-## Architecture
+## 环境要求
 
-```
-React (Vite) ── invoke ──► Rust commands ── HTTP ──► Emby Server
-                                │
-                                └── libmpv (feature: mpv)
-```
-
-Design tokens (Liquid Glass): [docs/design/liquid-glass.md](docs/design/liquid-glass.md).
+- 可访问的 Emby 服务器
+- 上述 macOS 或 Windows 系统
 
 ---
 
-## Scripts
+## 开始使用
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Vite frontend only |
-| `npm run build` | TypeScript + Vite production build |
-| `npm run lint` | ESLint |
-| `npm run test` | Vitest |
-| `npm run tauri:dev:mpv` | Tauri dev with mpv |
-| `npm run tauri build -- --features mpv` | Desktop release with mpv |
+1. 从 [Releases](https://github.com/envyafish/Harbor/releases) 下载最新 `.dmg`（macOS）或 Windows 安装包 / 压缩包。
+2. 打开 Harbor，填写 Emby 服务器地址、用户名与密码登录。
 
 ---
 
-## Privacy & security
+## 隐私与安全
 
-- Credentials and access tokens are handled on the Rust side and stored in the system keyring.
-- Harbor talks to **your** Emby server; it does not require a Harbor cloud account.
-- Danmaku (if enabled) is fetched from servers **you** configure; Harbor does not send danmaku.
-
----
-
-## Contributing
-
-Issues and pull requests are welcome. Please keep changes focused and match existing code style.
+- 账号与访问令牌保存在系统钥匙串中。
+- Harbor 只连接**你自己的** Emby 服务器，不需要 Harbor 云账号。
+- 若启用弹幕，请求仅发往**你配置的**弹幕服务器；本应用不支持发送弹幕。
 
 ---
 
-## License
+## 反馈
 
-TBD — license file will be added when the public release is finalized.
+欢迎通过 [GitHub Issues](https://github.com/envyafish/Harbor/issues) 提交问题与功能建议。
+
+本项目不开放源代码。
 
 ---
 
-## Acknowledgements
+## 许可证
+
+专有软件，保留所有权利。
+
+---
+
+## 致谢
 
 - [Emby](https://emby.media/)
 - [mpv](https://mpv.io/) / libmpv
 - [Tauri](https://tauri.app/)
-- [danmu_api](https://github.com/huangxd-/danmu_api) and compatible danmaku providers
-- [弹弹play](https://www.dandanplay.com/) open platform (protocol compatibility)
+- [danmu_api](https://github.com/huangxd-/danmu_api) 及兼容弹幕服务
+- [弹弹play](https://www.dandanplay.com/) 开放平台（协议兼容）
