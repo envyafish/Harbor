@@ -6,6 +6,8 @@
 
 Harbor 面向日常桌面使用：浏览媒体库、继续观看，并通过内嵌 **libmpv** 播放。可选接入你自行配置的、兼容 danmu_api 协议的弹幕源。
 
+[TG交流群](https://t.me/HarborRelease)
+
 ---
 
 ## 截图
