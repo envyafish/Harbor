@@ -96,9 +96,9 @@ Source code is not publicly available.
 
 ---
 
-## Sponsor
+## Purchase
 
-If Harbor is useful to you, you can support the project via the [shop](https://pay.ldxp.cn/shop/767OK1ZS):
+Buy Harbor from the [shop](https://pay.ldxp.cn/shop/767OK1ZS):
 
 <img src="docs/shop.png" alt="Shop QR code" width="220" />
 
