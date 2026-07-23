@@ -8,6 +8,14 @@ Harbor is built for everyday desktop use: browse your libraries, continue where 
 
 ---
 
+## Purchase
+
+Buy Harbor from the [shop](https://pay.ldxp.cn/shop/767OK1ZS):
+
+<img src="docs/shop.png" alt="Shop QR code" width="220" />
+
+---
+
 ## Screenshots
 
 ### Home
@@ -93,14 +101,6 @@ Current installers support **Windows 10** (x64) and **macOS 26** or later (**App
 Bug reports and feature requests are welcome via [GitHub Issues](https://github.com/envyafish/Harbor/issues).
 
 Source code is not publicly available.
-
----
-
-## Purchase
-
-Buy Harbor from the [shop](https://pay.ldxp.cn/shop/767OK1ZS):
-
-<img src="docs/shop.png" alt="Shop QR code" width="220" />
 
 ---
 
