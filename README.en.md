@@ -98,10 +98,8 @@ Source code is not publicly available.
 
 ## Sponsor
 
-If Harbor is useful to you, you can support the project via WeChat, [Afdian](https://ifdian.net/a/byte-muse), or the [shop](https://pay.ldxp.cn/shop/767OK1ZS):
+If Harbor is useful to you, you can support the project via the [shop](https://pay.ldxp.cn/shop/767OK1ZS):
 
-<img src="docs/sponsor-qr.png" alt="WeChat sponsor QR code" width="220" />
-<img src="docs/afdian.jpeg" alt="Afdian sponsor QR code" width="220" />
 <img src="docs/shop.png" alt="Shop QR code" width="220" />
 
 ---
