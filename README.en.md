@@ -86,6 +86,8 @@ Current installers support **Windows 10** (x64) and **macOS 26** or later (**App
 1. Download the latest `.dmg` (macOS) or installer / zip (Windows) from [Releases](https://github.com/envyafish/Harbor/releases).
 2. Open Harbor and sign in with your server URL, username, and password.
 
+To manually prepare subtitle generation models (Sidecar), see the [manual download guide](docs/MANUAL_SIDECAR_MODELS.md).
+
 ---
 
 ## Privacy & security

@@ -88,6 +88,8 @@ Harbor 面向日常桌面使用：浏览媒体库、继续观看，并通过内�
 1. 从 [Releases](https://github.com/envyafish/Harbor/releases) 下载最新 `.dmg`（macOS）或 Windows 安装包 / 压缩包。
 2. 打开 Harbor，填写服务器地址、用户名与密码登录。
 
+若需手动准备字幕生成模型（Sidecar），见 [手动下载教程](docs/MANUAL_SIDECAR_MODELS.md)。
+
 ---
 
 ## 隐私与安全
