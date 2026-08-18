@@ -1,6 +1,6 @@
 # Harbor（港湾）
 
-**中文** | [English](README.en.md)
+[Harbor TV（Android TV / Google TV）](https://github.com/envyafish/Harbor-Android-TV-Release)
 
 面向 [Emby](https://emby.media/) / [Jellyfin](https://jellyfin.org/) 的原生桌面客户端，亦兼容 [极影视](https://www.zspace.cn/)（缺乏充分测试）。
 
@@ -104,7 +104,7 @@ Harbor 面向日常桌面使用：浏览媒体库、继续观看，并通过内�
 
 欢迎通过 [GitHub Issues](https://github.com/envyafish/Harbor/issues) 提交问题与功能建议。
 
-本项目不开放源代码。
+电视版见 [Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release)。本项目不开放源代码。
 
 ---
 
