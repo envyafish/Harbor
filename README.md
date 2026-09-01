@@ -29,8 +29,6 @@ Harbor 有两个产品：
 
 可通过 [店铺](https://pay.ldxp.cn/shop/767OK1ZS) 购买 Harbor Pro。同一许可证可用于桌面端与 Harbor TV。
 
-<img src="docs/shop.png" alt="店铺二维码" width="220" />
-
 ---
 
 ## Harbor 桌面端
