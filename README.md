@@ -1,13 +1,27 @@
+<div align="center">
+
+<img src="docs/logo.png" width="120" height="120" alt="Harbor">
+
 # Harbor（港湾）
 
-面向 [Emby](https://emby.media/) / [Jellyfin](https://jellyfin.org/) 的原生客户端，亦兼容 [极影视](https://www.zspace.cn/)（缺乏充分测试）。
+**面向 [Emby](https://emby.media/) / [Jellyfin](https://jellyfin.org/) 的桌面与电视客户端**
+
+[![桌面版](https://img.shields.io/github/v/release/envyafish/Harbor?style=flat-square&label=desktop)](https://github.com/envyafish/Harbor/releases/latest)
+[![电视版](https://img.shields.io/github/v/release/envyafish/Harbor-Android-TV-Release?style=flat-square&label=tv)](https://github.com/envyafish/Harbor-Android-TV-Release/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/envyafish/Harbor/total?style=flat-square)](https://github.com/envyafish/Harbor/releases)
+
+[下载](https://github.com/envyafish/Harbor/releases/latest) · [Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release) · [反馈 Bug](https://github.com/envyafish/Harbor/issues) · [购买](https://pay.ldxp.cn/shop/767OK1ZS) · [TG 交流群](https://t.me/HarborRelease)
+
+</div>
+
+---
 
 Harbor 有两个产品：
 
 - **桌面端** — macOS / Windows，内嵌 **libmpv** 播放，适合日常浏览、续看、统计与弹幕
 - **[Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release)** — Android TV / Google TV，为客厅遥控重新设计
 
-[TG 交流群](https://t.me/HarborRelease)
+亦兼容 [极影视](https://www.zspace.cn/)（桌面端，缺乏充分测试）。
 
 ---
 
