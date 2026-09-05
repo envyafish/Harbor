@@ -10,7 +10,7 @@
 [![电视版](https://img.shields.io/github/v/release/envyafish/Harbor-Android-TV-Release?style=flat-square&label=tv)](https://github.com/envyafish/Harbor-Android-TV-Release/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/envyafish/Harbor/total?style=flat-square)](https://github.com/envyafish/Harbor/releases)
 
-[下载](https://github.com/envyafish/Harbor/releases/latest) · [Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release) · [反馈 Bug](https://github.com/envyafish/Harbor/issues) · [购买](https://pay.ldxp.cn/shop/767OK1ZS) · [TG 交流群](https://t.me/HarborRelease)
+[下载](https://github.com/envyafish/Harbor/releases/latest) · [Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release) · [反馈 Bug](https://github.com/envyafish/Harbor/issues) · [购买](https://wzyp.cn/shop/767OK1ZS) · [TG 交流群](https://t.me/HarborRelease)
 
 </div>
 
