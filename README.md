@@ -4,22 +4,23 @@
 
 # Harbor（港湾）
 
-**面向 [Emby](https://emby.media/) / [Jellyfin](https://jellyfin.org/) 的桌面与电视客户端**
+**面向 [Emby](https://emby.media/) / [Jellyfin](https://jellyfin.org/) 的桌面、电视与移动客户端**
 
 [![桌面版](https://img.shields.io/github/v/release/envyafish/Harbor?style=flat-square&label=desktop)](https://github.com/envyafish/Harbor/releases/latest)
 [![电视版](https://img.shields.io/github/v/release/envyafish/Harbor-Android-TV-Release?style=flat-square&label=tv)](https://github.com/envyafish/Harbor-Android-TV-Release/releases/latest)
+[![移动端](https://img.shields.io/github/v/release/envyafish/harbor-android-mobile-release?style=flat-square&label=mobile)](https://github.com/envyafish/harbor-android-mobile-release/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/envyafish/Harbor/total?style=flat-square)](https://github.com/envyafish/Harbor/releases)
 
-[下载](https://github.com/envyafish/Harbor/releases/latest) · [Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release) · [反馈 Bug](https://github.com/envyafish/Harbor/issues) · [购买](https://wzyp.cn/shop/767OK1ZS) · [TG 交流群](https://t.me/HarborRelease)
+[下载](https://github.com/envyafish/Harbor/releases/latest) · [Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release) · [Harbor 移动端](https://github.com/envyafish/harbor-android-mobile-release) · [反馈 Bug](https://github.com/envyafish/Harbor/issues) · [购买](https://wzyp.cn/shop/767OK1ZS) · [TG 交流群](https://t.me/HarborRelease)
 
 </div>
 
 ---
 
-Harbor 有两个产品：
+本仓库是 **Harbor 桌面端**。其他客户端请前往对应发行仓：
 
-- **桌面端** — macOS / Windows，内嵌 **libmpv** 播放，适合日常浏览、续看、统计与弹幕
-- **[Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release)** — Android TV / Google TV，为客厅遥控重新设计
+- [Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release)
+- [Harbor 移动端](https://github.com/envyafish/harbor-android-mobile-release)
 
 亦兼容 [极影视](https://www.zspace.cn/)（桌面端，缺乏充分测试）。
 
@@ -27,7 +28,7 @@ Harbor 有两个产品：
 
 ## 购买
 
-可通过 [店铺](https://wzyp.cn/shop/767OK1ZS) 购买 Harbor Pro。同一许可证可用于桌面端与 Harbor TV。
+可通过 [店铺](https://wzyp.cn/shop/767OK1ZS) 购买 Harbor Pro。同一许可证可用于桌面端、[Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release) 与 [Harbor 移动端](https://github.com/envyafish/harbor-android-mobile-release)。
 
 ---
 
@@ -144,103 +145,26 @@ Harbor 有两个产品：
 
 ---
 
-## Harbor TV
-
-客厅版 Harbor，运行在 **Android TV / Google TV**。全屏沉浸、方向键操作，浏览与播放习惯与桌面端对齐，但按遥控重新做了交互。
-
-需要 Harbor Pro 激活后使用。可用遥控器粘贴许可证，也可扫局域网二维码在手机 / 电脑上提交。
-
-### 首页
-
-满屏 Backdrop + 顶部横行挑片。有继续观看时，Hero 合并续看与 Next Up；焦点移动时背景、标题和「播放」按钮一起切换。往下是媒体库卡片，以及各库最新。
-
-顶栏为 **首页 · 收藏 · 搜索**，右侧是账号、儿童模式与设置。
-
-<img src="docs/素材/tv/Screenshot_20260901_083319.png" alt="Harbor TV 首页" width="100%" />
-
-<img src="docs/素材/tv/Screenshot_20260901_083408.png" alt="Harbor TV 媒体库行" width="100%" />
-
-### 媒体库
-
-海报网格，可用全部 / 未看 / 已看 / 收藏 / 合集筛选，并按年份、类型、标题等排序。每个库会记住上次的筛选与排序。
-
-<img src="docs/素材/tv/Screenshot_20260901_083420.png" alt="Harbor TV 媒体库网格" width="100%" />
-
-### 详情
-
-全宽背景、分辨率 / 时长 / 音轨信息，「继续」或从头播放，以及收藏、加入播放列表。音轨与字幕可在详情页选好再播。下方是演职员与相似影片。
-
-<img src="docs/素材/tv/Screenshot_20260901_083500.png" alt="Harbor TV 电影详情" width="100%" />
-
-<img src="docs/素材/tv/Screenshot_20260901_083527.png" alt="Harbor TV 演职员与相似" width="100%" />
-
-<img src="docs/素材/tv/Screenshot_20260901_083557.png" alt="Harbor TV 演职员页" width="100%" />
-
-### 收藏与搜索
-
-收藏按库分组。搜索页在未输入时展示服务器推荐，输入片名或剧名后自动出结果。
-
-<img src="docs/素材/tv/Screenshot_20260901_083859.png" alt="Harbor TV 收藏" width="100%" />
-
-<img src="docs/素材/tv/Screenshot_20260901_083923.png" alt="Harbor TV 搜索" width="100%" />
-
-### 播放器
-
-优先 Direct Play 原文件，不烧字幕。隐藏 OSD 时左右键 ±10 秒，并显示进度预览；上下键滑出完整控制条。剧集可在播放中选集，片尾约 8 秒倒计时下一集。
-
-<img src="docs/素材/tv/Screenshot_20260901_083723.png" alt="Harbor TV 播放" width="100%" />
-
-<img src="docs/素材/tv/Screenshot_20260901_083740.png" alt="Harbor TV 播放器 OSD" width="100%" />
-
-电视播放相关能力：
-
-- **直出优先** — Direct Play；HDMI 音频透传，不能透传时本机软解
-- **字幕** — 文本轨叠层；ASS/SSA 由本机 libass 渲染；支持双字幕
-- **杜比视界 / HDR** — 本机映射与 SDR 屏 tone map；可匹配电视刷新率
-- **跳过片头片尾** — 与桌面相同的四档；服务器无标记时用 IntroDB 补缺
-- **弹幕** — 只看不发；OSD 开关与换源；可按媒体库关闭
-- **暂停静帧** — 暂停一段时间后显示时钟，减少烧屏
-- **系统续看** — 写入 Android TV Watch Next，可从系统主页接着播
-
-### 儿童模式
-
-指定一个账号并设置 4 位 PIN。可分别限制工作日 / 周末每日时长，以及最早 / 最晚开播。家长可用 PIN 查看看片记录。儿童模式下没有设置、换号和弹幕入口。
-
-<img src="docs/素材/tv/Screenshot_20260901_083807.png" alt="Harbor TV 儿童模式设置" width="100%" />
-
-<img src="docs/素材/tv/Screenshot_20260901_083822.png" alt="Harbor TV 看片记录" width="100%" />
-
-### 电视端功能一览
-
-- **客厅交互** — 无常驻侧栏，方向键移焦点；卡片长按可播放、标记已看、加入播放列表
-- **多账号** — 局域网扫描或手动填地址；可用二维码在手机上完成登录
-- **收藏 / 搜索** — 顶栏直达；搜索页带服务器推荐
-- **播放** — Direct Play、双字幕、弹幕、跳过片头片尾、下一集倒计时
-- **儿童模式** — PIN、每日时长、可看时段、看片记录
-- **Trakt** — 设备码连接，同步播放进度
-- **外观** — 与桌面一致的 16 种主题色；浏览页深色 / 浅色
-
----
-
 ## 支持平台
 
-| 产品 | 平台 | 说明 |
-|------|------|------|
-| Harbor 桌面端 | macOS 26+（Apple Silicon / Intel） | Overlay 标题栏；原生播放随应用分发 |
-| Harbor 桌面端 | Windows 10+（x64） | 无边框窗口；原生播放随应用分发 |
-| Harbor TV | Android TV / Google TV（Android 7+） | 遥控 / 方向键；需 Harbor Pro |
+| 平台 | 说明 |
+|------|------|
+| macOS 26+（Apple Silicon / Intel） | Overlay 标题栏；原生播放随应用分发 |
+| Windows 10+（x64） | 无边框窗口；原生播放随应用分发 |
 
-当前桌面安装程序支持 **Windows 10**（x64）与 **macOS 26** 及以上。
+当前安装程序支持 **Windows 10**（x64）与 **macOS 26** 及以上。
+
+电视与移动端见 [Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release)、[Harbor 移动端](https://github.com/envyafish/harbor-android-mobile-release)。
 
 ---
 
 ## 支持的媒体服务器
 
-| 服务器 | 桌面端 | Harbor TV |
-|--------|--------|-----------|
-| [Emby](https://emby.media/) | 主要支持 | 主要支持 |
-| [Jellyfin](https://jellyfin.org/) | 已支持 | 已支持 |
-| [极影视](https://www.zspace.cn/) | 兼容，缺乏充分测试 | 不支持 |
+| 服务器 | 说明 |
+|--------|------|
+| [Emby](https://emby.media/) | 主要支持 |
+| [Jellyfin](https://jellyfin.org/) | 已支持 |
+| [极影视](https://www.zspace.cn/) | 兼容，缺乏充分测试 |
 
 ---
 
@@ -253,20 +177,15 @@ Harbor 有两个产品：
 
 若需手动准备字幕生成模型（Sidecar），见 [手动下载教程](docs/MANUAL_SIDECAR_MODELS.md)。
 
-**Harbor TV**
-
-1. 从 [Harbor TV Releases](https://github.com/envyafish/Harbor-Android-TV-Release) 下载 APK，在电视上安装。
-2. 用 Harbor Pro 许可证激活（可扫码在手机上提交）。
-3. 选择 Emby 或 Jellyfin，扫描局域网或手动填写地址后登录。
+电视与移动端请到 [Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release)、[Harbor 移动端](https://github.com/envyafish/harbor-android-mobile-release) 下载。
 
 ---
 
 ## 隐私与安全
 
-- 账号与访问令牌保存在系统钥匙串（桌面）或本机安全存储（电视）。
+- 账号与访问令牌保存在系统钥匙串中。
 - Harbor 只连接**你自己的**媒体服务器，不需要 Harbor 云账号。
 - 若启用弹幕，请求仅发往**你配置的**弹幕服务器；本应用不支持发送弹幕。
-- 儿童模式的 PIN 与看片记录只留在本机。
 
 ---
 
@@ -274,7 +193,7 @@ Harbor 有两个产品：
 
 欢迎通过 [GitHub Issues](https://github.com/envyafish/Harbor/issues) 提交问题与功能建议。
 
-电视版见 [Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release)。本项目不开放源代码。
+电视版见 [Harbor TV](https://github.com/envyafish/Harbor-Android-TV-Release)，移动端见 [Harbor 移动端](https://github.com/envyafish/harbor-android-mobile-release)。本项目不开放源代码。
 
 ---
 
